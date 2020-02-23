@@ -1,0 +1,30 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-image: url("https://cdn.glitch.com/f496b655-1cea-4495-a1d5-bd574550b2bc%2Fchair.jpg?v=1582419215843");
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 2px;
+}
+
+#countdown {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0px;
+}
+
+#message {
+  text-align: center;
+  font-size: 24px;
+}
+
+.box {
+  border-radius:10px;
+  border: 7px solid black;
+  background: white;
+}
