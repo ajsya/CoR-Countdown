@@ -1,3 +1,6 @@
+var audio = new Audio('Kahoot.mp3');
+audio.play();
+
 // Set the date we're counting down to
 var countDownDate = new Date("Feb 21, 2021 19:34:35").getTime();
 
