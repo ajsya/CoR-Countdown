@@ -1,5 +1,5 @@
 var audio = new Audio('kahoot.wav');
-myAudio.loop = true;
+audio.loop = true;
 audio.play();
 
 // Set the date we're counting down to
