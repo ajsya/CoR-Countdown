@@ -1,4 +1,4 @@
-var audio = new Audio('Kahoot.mp3');
+var audio = new Audio('kahoot.wav');
 audio.play();
 
 // Set the date we're counting down to
