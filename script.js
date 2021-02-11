@@ -19,6 +19,25 @@
 // var there = changeTimezone(here, "Europe/Paris");
 // var countDownDate = new Date(there).getTime();
 
+
+function sendMessage() {
+  var request = new XMLHttpRequest();
+  request.open(
+    "POST",
+    "https://discord.com/api/webhooks/809457786739621979/CadvKq-pNS7Q5sUDs253J9p8BNyz1tpm-EVyI3US9KOOzW0SSV2F1-5g2QczdTad9P9Y"
+  );
+  request.setRequestHeader("Content-type", "application/json");
+  var message_content = document.getElementById("Message").value;
+  var username = document.getElementById("username").value;
+  var params = {
+    username: "Live Countdown",
+    avatar_url: "",
+    content: message_content
+  };
+  request.send(JSON.stringify(params));
+  alert("Message Sent!")
+}
+
 var countDownDate = new Date("Feb 21, 2021 19:34:35 EST").getTime();
 
 // Update the count down every 1 second
@@ -39,7 +58,14 @@ var x = setInterval(function() {
   // Output the result in an element with id="demo"
   document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
-    
+  // document.getElementById("distance").innerHTML = distance;
+  
+  // Send Discord Webhook Update
+  if (minutes = 4) {
+    var message_content="f"
+    sendMessage()
+  }
+  
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
