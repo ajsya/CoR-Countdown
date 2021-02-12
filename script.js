@@ -38,7 +38,7 @@ function sendMessage() {
   alert("Message Sent!")
 }
 
-var countDownDate = new Date("Feb 21, 2021 19:34:35 EST").getTime();
+var countDownDate = new Date("Feb 23, 2021 1:34:35 UTC").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
