@@ -1,44 +1,4 @@
-// function changeTimezone(date, ianatz) {
-
-  // suppose the date is 12:00 UTC
-//var invdate = new Date(date.toLocaleString('en-US', {
-  //  timeZone: ianatz
- // }));
-
-  // then invdate will be 07:00 in Toronto
-  // and the diff is 5 hours
- // var diff = date.getTime() - invdate.getTime();
-
-  // so 12:00 in Toronto is 17:00 UTC
-  //return new Date(date.getTime() - diff); // needs to substract
-  
-//}
-
-// Set the date we're counting down to
-//var here = new Date("Feb 21, 2021 19:34:35");
-// var there = changeTimezone(here, "Europe/Paris");
-// var countDownDate = new Date(there).getTime();
-
-
-function sendMessage() {
-  var request = new XMLHttpRequest();
-  request.open(
-    "POST",
-    "https://discord.com/api/webhooks/809457786739621979/CadvKq-pNS7Q5sUDs253J9p8BNyz1tpm-EVyI3US9KOOzW0SSV2F1-5g2QczdTad9P9Y"
-  );
-  request.setRequestHeader("Content-type", "application/json");
-  var message_content = document.getElementById("Message").value;
-  var username = document.getElementById("username").value;
-  var params = {
-    username: "Live Countdown",
-    avatar_url: "",
-    content: message_content
-  };
-  request.send(JSON.stringify(params));
-  alert("Message Sent!")
-}
-
-var countDownDate = new Date("Feb 21, 2022 19:34:35 EST").getTime();
+var countDownDate = new Date("Feb 23, 2022 1:34:35 UTC").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
