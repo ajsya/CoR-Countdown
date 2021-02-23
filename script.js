@@ -21,16 +21,10 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
   // document.getElementById("distance").innerHTML = distance;
   
-  // Send Discord Webhook Update
-  if (minutes = 4) {
-    var message_content="f"
-    sendMessage()
-  }
-  
   // If the count down is over, write some text 
-  if (distance < 0) {
+  if (distance <= 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Happy Birthday Chair of Republic!";
-    document.getElementById("message").innerHTML = "Congratulations! You're now a toddler Chair of Republic!";
+    document.getElementById("countdown").innerHTML = "Happy Anniversary Chair of Republic!";
+    document.getElementById("message").innerHTML = "Congratulations on turning three!";
   }
 }, 1000);
