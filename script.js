@@ -1,4 +1,4 @@
-var countDownDate = new Date("Feb 23, 2022 1:34:35 UTC").getTime();
+var countDownDate = new Date("Feb 23, 2024 1:34:35 UTC").getTime();
 
 
 // Update the count down every 1 second
@@ -25,6 +25,6 @@ var x = setInterval(function() {
   if (distance <= 0) {
     clearInterval(x);
     document.getElementById("countdown").innerHTML = "Happy Anniversary Chair of Republic!";
-    document.getElementById("message").innerHTML = "Congratulations on turning three!";
+    document.getElementById("message").innerHTML = "Congratulations on turning five!";
   }
 }, 1000);
